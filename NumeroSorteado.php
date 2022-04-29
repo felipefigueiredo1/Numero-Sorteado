@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Escreva um programa que preencha um array com 20 números inteiros sorteados entre 1 e 10. 
+ * Depois informe qual ou quais número(s) não se repetiram.
+ */
+
 class NumeroSorteado 
 {
     public $sets;
@@ -17,7 +22,7 @@ class NumeroSorteado
     {
         echo "Numeros sorteados: ";
         foreach ($this->sets as $set) {
-            echo implode(',' , $set) , "\n";
+            echo implode(',' , $set) , ",";
         }
 
         $this->numerosUnicos($set);
@@ -32,6 +37,7 @@ class NumeroSorteado
     }
 }
 
+//Aqui passado parametro
 $obj = new NumeroSorteado;
 $obj->pegandoNumeros(1,10);
 $obj->iterando();
