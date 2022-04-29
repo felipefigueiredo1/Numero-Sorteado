@@ -8,7 +8,7 @@ class NumeroSorteado
     {
         $array = range($inicio, $final);
         shuffle($array);
-        $sets = array_chunk($array, 5);
+        $sets = array_chunk($array, 2);
 
         $this->sets = $sets;
     }
